@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2 align="Center">Welcome Canara Bank </h2>
+    <h4>Please Fill The Enquiry form</h4>
+     <form>
+        <fieldset>
+            <legend>Enquiry</legend>
+          Name : <input type="text" name="Name" value="Amritanshu" placeholder="Enter Your Name " required="" readonly="" maxlength ="20"/>   
+          <br/>
+          <br/>
+          Address: <textarea name="address" placeholder="Enter Address" ></textarea>
+          <br/>
+          <br/>
+          Pincode:
+          <input type="number" name="pincode" />
+          <br/>
+          <br/>
+          Age:
+          <input type="number" placeholder="0" name="age" min="1" max="25" />
+          <br/>
+          <br/>
+          Gender :
+          <input type="radio" value="m" name="gender"/>Male
+          <input type="radio" value="f" name="gender" checked=""/>Female 
+          <input type="radio" value="o" name="gender"/>Other
+          <br/>
+          <br/>
+          Country:
+          <select autofocus="">
+            <option value="hlo" name="country">Please select a country</option>
+            <optgroup label="Asia">
+                <option value="india" name="country">India</option>
+                <option value="shrilanka" name="country">Shri Lanka</option>
+            </optgroup>
+                <option value="usa" name="usa">USA</option>
+          </select>
+          <br/>
+          <br/>
+          Hobbies :
+          <input type="checkbox" name ="hobbies[]" checked="" />Dancing
+          <input type="checkbox" name="hobbies[]"/>Listening Music
+          <input type="checkbox" name="hobbies[]"/>Playing Games
+          <br/>
+          <br/>
+          Favourite Color:
+          <input type="color" name="color" value="#ff0000"/>
+          <br/>
+          <br/>
+          Image:
+          <input type="file" name ="image1"/>
+          <br/>
+          <br/>
+          <input type="submit" value="Send"/>
+          <input type="reset" />
+          <br/>
+          <br/>
+          Rating [0-100]:
+          <input type="range" name="rangeval"  min =20 value="25" max="75"/>
+        </fieldset>
+     </form>
+
+</body>
+</html>
